@@ -1,0 +1,35 @@
+{
+  "name": "page-to-crm",
+  "version": "1.0.0",
+  "description": "CRM con node.js express, MySql",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Abad",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "*",
+    "express-myconnection": "^1.0.4",
+    "express-mysql-session": "^2.0.1",
+    "express-session": "^1.15.1",
+    "express-validator": "^5.3.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-icon": "^2.3.3",
+    "timeago.js": "^4.0.0-beta.1"
+  },
+  "ignore_watch" : ["public/", "node_modules/", "logs"],
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}

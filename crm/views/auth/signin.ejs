@@ -1,0 +1,64 @@
+<%- contentFor('head')%>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<%- contentFor('body')%>
+
+<div class="fondo-completo"></div>
+<div class="padding-vertical-10 terandpol-fondo" style="padding:8px; margin: auto;position: absolute;top: 0; left: 0; bottom: 0; right: 0;">
+    <div class="login_box">
+      <div class="main-box">
+        <div class="text-center">
+          <img src="assets/admin/images/logo.png" class="img-circle" style="width: 28%;">
+        </div>
+        <h3 class="text-center titulo-secciones" style="text-shadow: 2.5px 0.7px #ffffff; color:black black;"><strong>Acceso</strong></h3>
+        <form class="form-horizontal" action="/signin" method="POST">
+          <fieldset>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user" style="color:#007bff;"></i></span>
+              <input id="username" type="text" class="form-control" name="username" placeholder="Email">
+            </div><br>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock" style="color:#007bff;"></i></span>
+              <input id="password" type="password" class="form-control" name="password" placeholder="Contraseña">
+            </div><br>
+            <div class="form-group">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <button type="submit" style="background-color: #28a745;color: white;" class="btn btn-block btn-lg round"><i class="fa fa-arrow-right"></i> Entrar</button>
+              </div>
+              <div class="col-md-3"></div>
+            </div>
+
+          </fieldset>
+        </form>
+      </div>
+    </div>
+</div>
+<style type="text/css">
+.login_box {
+    margin:0 auto;
+    max-width: 400px;
+    min-width: 320px;
+    width: 100%;
+}
+.main-box {
+    background: rgb(255 251 251 / 84%) none repeat scroll 0 0;
+    /*background: rgb(72 216 249 / 41%) none repeat scroll 0 0;*/
+    float: left;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 50px 15px;
+    width: 100%;
+    border: 1px solid #fff;
+}
+</style>
+
+<%- contentFor('scripts')%>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"  crossorigin="anonymous"></script>
+
+<!--BACKSTRETCH-->
+<!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script>
+    $.backstretch("assets/admin/images/login2.jpg", {speed: 1000});
+</script>
